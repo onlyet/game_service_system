@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cattles_game\CCattles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cattles_game\CGameLogicHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cattles_game\CGameProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CCfg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CCond.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CLock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CMD5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CMemManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CMemPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CMessageQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CMultiW_SingleR_Queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CMutex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CRefObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CShm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CSingleW_SingleR_Buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\CUUId.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\Function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base_lib\xmlConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\connect_lib\CClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\connect_lib\CConnectManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\connect_lib\CDataHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\connect_lib\CDataTransmit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\connect_lib\CEpoll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\connect_lib\CSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\connect_lib\CTcpConnect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\connect_lib\CUdp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\db_lib\CMemcache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\db_lib\CMySql.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common\db_lib\CRedis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbproxy_common\CChessHallOperation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbproxy_common\CDataCache.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbproxy_common\CDBProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbproxy_common\CGameRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbproxy_common\CLogicHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbproxy_common\CMsgHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbproxy_common\CServiceLogicData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\messagecomm\CMsgComm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvframe\CConnectMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvframe\CDataContent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvframe\CGameModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvframe\CLogicHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvframe\CModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvframe\CNetDataHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvframe\CNetMsgComm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvframe\CService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvmsgcomm\CNetMsgHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame\srvmsgcomm\CSrvMsgComm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_hall_service\CGameHall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_hall_service\CHallLogicHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_object\CGameLogicHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_object\CGameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gateway_proxy\CGatewayProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="golden_fraud_game\CGoldenFraud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_base\CHttpConnectMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_base\CHttpData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_base\CHttpSrv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_service\CHttpLogicHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_service\CHttpOptSrv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_service\CServiceLogicHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_service\CWXLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login_list_service\CLogic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login_list_service\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login_list_service\appsrv_login_list.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login_list_service\CLIENT_GET_LOGIN_LIST.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message_center\CMessageSrvFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message_center\CMsgCenterHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="operation_manager\CHttpMessageHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="operation_manager\COptLogicHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="operation_manager\COptMsgHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service_common_lib\CClientVersionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service_common_lib\CIP2City.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service_common_lib\CommonType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service_common_lib\CRandomNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service_common_lib\CRechargeMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service_common_lib\CSensitiveWordFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service_common_lib\CServiceOperation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service_common_lib\CStatisticsData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation_client_service\CSimulationClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\xml_to_c\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xqfanfan_game_service\CFFQILogicHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xqfanfan_game_service\CRobotManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xqfanfan_game_service\CXiangQiSrv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cattles_game\BaseDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cattles_game\CCattles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cattles_game\CGameLogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cattles_game\CGameProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cattles_game\_NCattlesConfigData_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CCfg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CCond.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CMD5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CMemManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CMemPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CMessageQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CMultiW_SingleR_Queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CMutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\Constant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CRefObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CShm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CSingleW_SingleR_Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\CUUId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\ErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\Function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\MacroDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\Type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\base_lib\xmlConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\CClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\CConnectManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\CDataHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\CDataTransmit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\CEpoll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\CSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\CTcpConnect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\CUdp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\ILogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\connect_lib\NetType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\db_lib\CMemcache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\db_lib\CMySql.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\db_lib\CRedis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbproxy_common\BaseDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbproxy_common\CChessHallOperation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbproxy_common\CDataCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbproxy_common\CDBProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbproxy_common\CGameRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbproxy_common\CLogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbproxy_common\CMsgHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbproxy_common\CServiceLogicData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbproxy_common\_DbProxyConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\messagecomm\CMsgComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\messagecomm\ISrvMsgComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\messagecomm\MsgCommType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\CConnectMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\CDataContent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\CGameModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\CLogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\CModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\CNetDataHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\CNetMsgComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\CService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\FrameType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\IService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvframe\UserType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvmsgcomm\CNetMsgHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame\srvmsgcomm\CSrvMsgComm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_hall_service\CGameHall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_hall_service\CHallLogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_hall_service\TypeDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_hall_service\_HallConfigData_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_object\CGameLogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_object\CGameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_object\GameDataDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_object\GameObjectErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway_proxy\CGatewayProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway_proxy\TypeDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gateway_proxy\_GatewayProxyConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="golden_fraud_game\BaseDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="golden_fraud_game\CGoldenFraud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="golden_fraud_game\_NGoldenFraudConfigData_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_base\CHttpConnectMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_base\CHttpData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_base\CHttpSrv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_base\HttpBaseDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_service\BaseDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_service\CHttpLogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_service\CHttpOptSrv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_service\CServiceLogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_service\CWXLogin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_service\_NHttpOperationConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="login_list_service\appsrv_login_list.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="login_list_service\CLIENT_GET_LOGIN_LIST.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="login_list_service\CLogic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="login_list_service\MessageDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="login_list_service\_LoginListConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message_center\BaseDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message_center\CMessageSrvFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message_center\CMsgCenterHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message_center\_MsgCenterCfg_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="operation_manager\BaseDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="operation_manager\CHttpMessageHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="operation_manager\COptLogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="operation_manager\COptMsgHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="operation_manager\_NOptMgrConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CattlesErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CattlesProtocolId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CClientVersionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CIP2City.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CommonDataDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CommonType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CRandomNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CRechargeMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CSensitiveWordFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CServiceOperation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\CStatisticsData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\DBProxyErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\DBProxyProtocolId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\FightLandlordErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\FightLandlordProtocolId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\GameHallErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\GameHallProtocolId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\GoldenFraudErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\GoldenFraudProtocolId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\HttpOperationErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\HttpOperationProtocolId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\MessageCenterErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\MessageCenterProtocolId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\OperationManagerErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\OperationManagerProtocolId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\ServiceErrorCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\ServiceProtocolId.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\service_common_module.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\_DBConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\_MallConfigData_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\_NCattlesBaseConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\_NCommonConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\_NFightLandlordBaseConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\_NGoldenFraudBaseConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service_common_lib\_ServiceCommonConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation_client_service\CSimulationClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation_client_service\TypeDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation_client_service\_SimulationClientConfigData_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\xml_to_c\_SampleCppFile_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xqfanfan_game_service\CFFQILogicHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xqfanfan_game_service\CRobotManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xqfanfan_game_service\CXiangQiSrv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xqfanfan_game_service\TypeDefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xqfanfan_game_service\_XiangQiConfig_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

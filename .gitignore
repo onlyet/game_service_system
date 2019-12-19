@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+
+# ignore VS files
+*.vs
+*.VC.db
+*.user

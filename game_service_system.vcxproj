@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{50D51055-9BC9-4DA2-A9BD-C3AA8337C43C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(PUBLIC)\usr_include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cattles_game\CCattles.cpp" />
+    <ClCompile Include="cattles_game\CGameLogicHandler.cpp" />
+    <ClCompile Include="cattles_game\CGameProcess.cpp" />
+    <ClCompile Include="common\base_lib\CCfg.cpp" />
+    <ClCompile Include="common\base_lib\CCond.cpp" />
+    <ClCompile Include="common\base_lib\CLock.cpp" />
+    <ClCompile Include="common\base_lib\CLogger.cpp" />
+    <ClCompile Include="common\base_lib\CMD5.cpp" />
+    <ClCompile Include="common\base_lib\CMemManager.cpp" />
+    <ClCompile Include="common\base_lib\CMemPool.cpp" />
+    <ClCompile Include="common\base_lib\CMessageQueue.cpp" />
+    <ClCompile Include="common\base_lib\CMultiW_SingleR_Queue.cpp" />
+    <ClCompile Include="common\base_lib\CMutex.cpp" />
+    <ClCompile Include="common\base_lib\CProcess.cpp" />
+    <ClCompile Include="common\base_lib\CRefObj.cpp" />
+    <ClCompile Include="common\base_lib\CShm.cpp" />
+    <ClCompile Include="common\base_lib\CSingleW_SingleR_Buffer.cpp" />
+    <ClCompile Include="common\base_lib\CThread.cpp" />
+    <ClCompile Include="common\base_lib\CTimer.cpp" />
+    <ClCompile Include="common\base_lib\CUUId.cpp" />
+    <ClCompile Include="common\base_lib\Function.cpp" />
+    <ClCompile Include="common\base_lib\xmlConfig.cpp" />
+    <ClCompile Include="common\connect_lib\CClient.cpp" />
+    <ClCompile Include="common\connect_lib\CConnectManager.cpp" />
+    <ClCompile Include="common\connect_lib\CDataHandler.cpp" />
+    <ClCompile Include="common\connect_lib\CDataTransmit.cpp" />
+    <ClCompile Include="common\connect_lib\CEpoll.cpp" />
+    <ClCompile Include="common\connect_lib\CSocket.cpp" />
+    <ClCompile Include="common\connect_lib\CTcpConnect.cpp" />
+    <ClCompile Include="common\connect_lib\CUdp.cpp" />
+    <ClCompile Include="common\db_lib\CMemcache.cpp" />
+    <ClCompile Include="common\db_lib\CMySql.cpp" />
+    <ClCompile Include="common\db_lib\CRedis.cpp" />
+    <ClCompile Include="dbproxy_common\CChessHallOperation.cpp" />
+    <ClCompile Include="dbproxy_common\CDataCache.cpp" />
+    <ClCompile Include="dbproxy_common\CDBProxy.cpp" />
+    <ClCompile Include="dbproxy_common\CGameRecord.cpp" />
+    <ClCompile Include="dbproxy_common\CLogicHandler.cpp" />
+    <ClCompile Include="dbproxy_common\CMsgHandler.cpp" />
+    <ClCompile Include="dbproxy_common\CServiceLogicData.cpp" />
+    <ClCompile Include="frame\messagecomm\CMsgComm.cpp" />
+    <ClCompile Include="frame\srvframe\CConnectMgr.cpp" />
+    <ClCompile Include="frame\srvframe\CDataContent.cpp" />
+    <ClCompile Include="frame\srvframe\CGameModule.cpp" />
+    <ClCompile Include="frame\srvframe\CLogicHandler.cpp" />
+    <ClCompile Include="frame\srvframe\CModule.cpp" />
+    <ClCompile Include="frame\srvframe\CNetDataHandler.cpp" />
+    <ClCompile Include="frame\srvframe\CNetMsgComm.cpp" />
+    <ClCompile Include="frame\srvframe\CService.cpp" />
+    <ClCompile Include="frame\srvmsgcomm\CNetMsgHandler.cpp" />
+    <ClCompile Include="frame\srvmsgcomm\CSrvMsgComm.cpp" />
+    <ClCompile Include="game_hall_service\CGameHall.cpp" />
+    <ClCompile Include="game_hall_service\CHallLogicHandler.cpp" />
+    <ClCompile Include="game_object\CGameLogicHandler.cpp" />
+    <ClCompile Include="game_object\CGameObject.cpp" />
+    <ClCompile Include="gateway_proxy\CGatewayProxy.cpp" />
+    <ClCompile Include="golden_fraud_game\CGoldenFraud.cpp" />
+    <ClCompile Include="http_base\CHttpConnectMgr.cpp" />
+    <ClCompile Include="http_base\CHttpData.cpp" />
+    <ClCompile Include="http_base\CHttpSrv.cpp" />
+    <ClCompile Include="http_service\CHttpLogicHandler.cpp" />
+    <ClCompile Include="http_service\CHttpOptSrv.cpp" />
+    <ClCompile Include="http_service\CServiceLogicHandler.cpp" />
+    <ClCompile Include="http_service\CWXLogin.cpp" />
+    <ClCompile Include="login_list_service\appsrv_login_list.pb.cc" />
+    <ClCompile Include="login_list_service\CLIENT_GET_LOGIN_LIST.pb.cc" />
+    <ClCompile Include="login_list_service\CLogic.cpp" />
+    <ClCompile Include="login_list_service\main.cpp" />
+    <ClCompile Include="message_center\CMessageSrvFrame.cpp" />
+    <ClCompile Include="message_center\CMsgCenterHandler.cpp" />
+    <ClCompile Include="operation_manager\CHttpMessageHandler.cpp" />
+    <ClCompile Include="operation_manager\COptLogicHandler.cpp" />
+    <ClCompile Include="operation_manager\COptMsgHandler.cpp" />
+    <ClCompile Include="service_common_lib\CClientVersionManager.cpp" />
+    <ClCompile Include="service_common_lib\CIP2City.cpp" />
+    <ClCompile Include="service_common_lib\CommonType.cpp" />
+    <ClCompile Include="service_common_lib\CRandomNumber.cpp" />
+    <ClCompile Include="service_common_lib\CRechargeMgr.cpp" />
+    <ClCompile Include="service_common_lib\CSensitiveWordFilter.cpp" />
+    <ClCompile Include="service_common_lib\CServiceOperation.cpp" />
+    <ClCompile Include="service_common_lib\CStatisticsData.cpp" />
+    <ClCompile Include="simulation_client_service\CSimulationClient.cpp" />
+    <ClCompile Include="tools\xml_to_c\main.cpp" />
+    <ClCompile Include="xqfanfan_game_service\CFFQILogicHandler.cpp" />
+    <ClCompile Include="xqfanfan_game_service\CRobotManager.cpp" />
+    <ClCompile Include="xqfanfan_game_service\CXiangQiSrv.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cattles_game\BaseDefine.h" />
+    <ClInclude Include="cattles_game\CCattles.h" />
+    <ClInclude Include="cattles_game\CGameLogicHandler.h" />
+    <ClInclude Include="cattles_game\CGameProcess.h" />
+    <ClInclude Include="cattles_game\_NCattlesConfigData_.h" />
+    <ClInclude Include="common\base_lib\CCfg.h" />
+    <ClInclude Include="common\base_lib\CCond.h" />
+    <ClInclude Include="common\base_lib\CLock.h" />
+    <ClInclude Include="common\base_lib\CLogger.h" />
+    <ClInclude Include="common\base_lib\CMD5.h" />
+    <ClInclude Include="common\base_lib\CMemManager.h" />
+    <ClInclude Include="common\base_lib\CMemPool.h" />
+    <ClInclude Include="common\base_lib\CMessageQueue.h" />
+    <ClInclude Include="common\base_lib\CMultiW_SingleR_Queue.h" />
+    <ClInclude Include="common\base_lib\CMutex.h" />
+    <ClInclude Include="common\base_lib\Constant.h" />
+    <ClInclude Include="common\base_lib\CProcess.h" />
+    <ClInclude Include="common\base_lib\CRefObj.h" />
+    <ClInclude Include="common\base_lib\CShm.h" />
+    <ClInclude Include="common\base_lib\CSingleW_SingleR_Buffer.h" />
+    <ClInclude Include="common\base_lib\CThread.h" />
+    <ClInclude Include="common\base_lib\CTimer.h" />
+    <ClInclude Include="common\base_lib\CUUId.h" />
+    <ClInclude Include="common\base_lib\ErrorCode.h" />
+    <ClInclude Include="common\base_lib\Function.h" />
+    <ClInclude Include="common\base_lib\MacroDefine.h" />
+    <ClInclude Include="common\base_lib\Type.h" />
+    <ClInclude Include="common\base_lib\xmlConfig.h" />
+    <ClInclude Include="common\connect_lib\CClient.h" />
+    <ClInclude Include="common\connect_lib\CConnectManager.h" />
+    <ClInclude Include="common\connect_lib\CDataHandler.h" />
+    <ClInclude Include="common\connect_lib\CDataTransmit.h" />
+    <ClInclude Include="common\connect_lib\CEpoll.h" />
+    <ClInclude Include="common\connect_lib\CSocket.h" />
+    <ClInclude Include="common\connect_lib\CTcpConnect.h" />
+    <ClInclude Include="common\connect_lib\CUdp.h" />
+    <ClInclude Include="common\connect_lib\ILogicHandler.h" />
+    <ClInclude Include="common\connect_lib\NetType.h" />
+    <ClInclude Include="common\db_lib\CMemcache.h" />
+    <ClInclude Include="common\db_lib\CMySql.h" />
+    <ClInclude Include="common\db_lib\CRedis.h" />
+    <ClInclude Include="dbproxy_common\BaseDefine.h" />
+    <ClInclude Include="dbproxy_common\CChessHallOperation.h" />
+    <ClInclude Include="dbproxy_common\CDataCache.h" />
+    <ClInclude Include="dbproxy_common\CDBProxy.h" />
+    <ClInclude Include="dbproxy_common\CGameRecord.h" />
+    <ClInclude Include="dbproxy_common\CLogicHandler.h" />
+    <ClInclude Include="dbproxy_common\CMsgHandler.h" />
+    <ClInclude Include="dbproxy_common\CServiceLogicData.h" />
+    <ClInclude Include="dbproxy_common\_DbProxyConfig_.h" />
+    <ClInclude Include="frame\messagecomm\CMsgComm.h" />
+    <ClInclude Include="frame\messagecomm\ISrvMsgComm.h" />
+    <ClInclude Include="frame\messagecomm\MsgCommType.h" />
+    <ClInclude Include="frame\srvframe\CConnectMgr.h" />
+    <ClInclude Include="frame\srvframe\CDataContent.h" />
+    <ClInclude Include="frame\srvframe\CGameModule.h" />
+    <ClInclude Include="frame\srvframe\CLogicHandler.h" />
+    <ClInclude Include="frame\srvframe\CModule.h" />
+    <ClInclude Include="frame\srvframe\CNetDataHandler.h" />
+    <ClInclude Include="frame\srvframe\CNetMsgComm.h" />
+    <ClInclude Include="frame\srvframe\CService.h" />
+    <ClInclude Include="frame\srvframe\FrameType.h" />
+    <ClInclude Include="frame\srvframe\IService.h" />
+    <ClInclude Include="frame\srvframe\UserType.h" />
+    <ClInclude Include="frame\srvmsgcomm\CNetMsgHandler.h" />
+    <ClInclude Include="frame\srvmsgcomm\CSrvMsgComm.h" />
+    <ClInclude Include="game_hall_service\CGameHall.h" />
+    <ClInclude Include="game_hall_service\CHallLogicHandler.h" />
+    <ClInclude Include="game_hall_service\TypeDefine.h" />
+    <ClInclude Include="game_hall_service\_HallConfigData_.h" />
+    <ClInclude Include="game_object\CGameLogicHandler.h" />
+    <ClInclude Include="game_object\CGameObject.h" />
+    <ClInclude Include="game_object\GameDataDefine.h" />
+    <ClInclude Include="game_object\GameObjectErrorCode.h" />
+    <ClInclude Include="gateway_proxy\CGatewayProxy.h" />
+    <ClInclude Include="gateway_proxy\TypeDefine.h" />
+    <ClInclude Include="gateway_proxy\_GatewayProxyConfig_.h" />
+    <ClInclude Include="golden_fraud_game\BaseDefine.h" />
+    <ClInclude Include="golden_fraud_game\CGoldenFraud.h" />
+    <ClInclude Include="golden_fraud_game\_NGoldenFraudConfigData_.h" />
+    <ClInclude Include="http_base\CHttpConnectMgr.h" />
+    <ClInclude Include="http_base\CHttpData.h" />
+    <ClInclude Include="http_base\CHttpSrv.h" />
+    <ClInclude Include="http_base\HttpBaseDefine.h" />
+    <ClInclude Include="http_service\BaseDefine.h" />
+    <ClInclude Include="http_service\CHttpLogicHandler.h" />
+    <ClInclude Include="http_service\CHttpOptSrv.h" />
+    <ClInclude Include="http_service\CServiceLogicHandler.h" />
+    <ClInclude Include="http_service\CWXLogin.h" />
+    <ClInclude Include="http_service\_NHttpOperationConfig_.h" />
+    <ClInclude Include="login_list_service\appsrv_login_list.pb.h" />
+    <ClInclude Include="login_list_service\CLIENT_GET_LOGIN_LIST.pb.h" />
+    <ClInclude Include="login_list_service\CLogic.h" />
+    <ClInclude Include="login_list_service\MessageDefine.h" />
+    <ClInclude Include="login_list_service\_LoginListConfig_.h" />
+    <ClInclude Include="message_center\BaseDefine.h" />
+    <ClInclude Include="message_center\CMessageSrvFrame.h" />
+    <ClInclude Include="message_center\CMsgCenterHandler.h" />
+    <ClInclude Include="message_center\_MsgCenterCfg_.h" />
+    <ClInclude Include="operation_manager\BaseDefine.h" />
+    <ClInclude Include="operation_manager\CHttpMessageHandler.h" />
+    <ClInclude Include="operation_manager\COptLogicHandler.h" />
+    <ClInclude Include="operation_manager\COptMsgHandler.h" />
+    <ClInclude Include="operation_manager\_NOptMgrConfig_.h" />
+    <ClInclude Include="service_common_lib\CattlesErrorCode.h" />
+    <ClInclude Include="service_common_lib\CattlesProtocolId.h" />
+    <ClInclude Include="service_common_lib\CClientVersionManager.h" />
+    <ClInclude Include="service_common_lib\CIP2City.h" />
+    <ClInclude Include="service_common_lib\CommonDataDefine.h" />
+    <ClInclude Include="service_common_lib\CommonType.h" />
+    <ClInclude Include="service_common_lib\CRandomNumber.h" />
+    <ClInclude Include="service_common_lib\CRechargeMgr.h" />
+    <ClInclude Include="service_common_lib\CSensitiveWordFilter.h" />
+    <ClInclude Include="service_common_lib\CServiceOperation.h" />
+    <ClInclude Include="service_common_lib\CStatisticsData.h" />
+    <ClInclude Include="service_common_lib\DBProxyErrorCode.h" />
+    <ClInclude Include="service_common_lib\DBProxyProtocolId.h" />
+    <ClInclude Include="service_common_lib\FightLandlordErrorCode.h" />
+    <ClInclude Include="service_common_lib\FightLandlordProtocolId.h" />
+    <ClInclude Include="service_common_lib\GameHallErrorCode.h" />
+    <ClInclude Include="service_common_lib\GameHallProtocolId.h" />
+    <ClInclude Include="service_common_lib\GoldenFraudErrorCode.h" />
+    <ClInclude Include="service_common_lib\GoldenFraudProtocolId.h" />
+    <ClInclude Include="service_common_lib\HttpOperationErrorCode.h" />
+    <ClInclude Include="service_common_lib\HttpOperationProtocolId.h" />
+    <ClInclude Include="service_common_lib\MessageCenterErrorCode.h" />
+    <ClInclude Include="service_common_lib\MessageCenterProtocolId.h" />
+    <ClInclude Include="service_common_lib\OperationManagerErrorCode.h" />
+    <ClInclude Include="service_common_lib\OperationManagerProtocolId.h" />
+    <ClInclude Include="service_common_lib\ServiceErrorCode.h" />
+    <ClInclude Include="service_common_lib\ServiceProtocolId.h" />
+    <ClInclude Include="service_common_lib\service_common_module.pb.h" />
+    <ClInclude Include="service_common_lib\_DBConfig_.h" />
+    <ClInclude Include="service_common_lib\_MallConfigData_.h" />
+    <ClInclude Include="service_common_lib\_NCattlesBaseConfig_.h" />
+    <ClInclude Include="service_common_lib\_NCommonConfig_.h" />
+    <ClInclude Include="service_common_lib\_NFightLandlordBaseConfig_.h" />
+    <ClInclude Include="service_common_lib\_NGoldenFraudBaseConfig_.h" />
+    <ClInclude Include="service_common_lib\_ServiceCommonConfig_.h" />
+    <ClInclude Include="simulation_client_service\CSimulationClient.h" />
+    <ClInclude Include="simulation_client_service\TypeDefine.h" />
+    <ClInclude Include="simulation_client_service\_SimulationClientConfigData_.h" />
+    <ClInclude Include="tools\xml_to_c\_SampleCppFile_.h" />
+    <ClInclude Include="xqfanfan_game_service\CFFQILogicHandler.h" />
+    <ClInclude Include="xqfanfan_game_service\CRobotManager.h" />
+    <ClInclude Include="xqfanfan_game_service\CXiangQiSrv.h" />
+    <ClInclude Include="xqfanfan_game_service\TypeDefine.h" />
+    <ClInclude Include="xqfanfan_game_service\_XiangQiConfig_.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
