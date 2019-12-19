@@ -64,7 +64,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(PUBLIC)\usr_include;$(IncludePath)</IncludePath>
+    <IncludePath>$(PUBLIC)\usr_include;$(ProjectDir)common;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -102,6 +102,25 @@
     <ClCompile Include="cattles_game\CCattles.cpp" />
     <ClCompile Include="cattles_game\CGameLogicHandler.cpp" />
     <ClCompile Include="cattles_game\CGameProcess.cpp" />
+    <ClCompile Include="common\base\CCfg.cpp" />
+    <ClCompile Include="common\base\CCond.cpp" />
+    <ClCompile Include="common\base\CLock.cpp" />
+    <ClCompile Include="common\base\CLogger.cpp" />
+    <ClCompile Include="common\base\CMD5.cpp" />
+    <ClCompile Include="common\base\CMemManager.cpp" />
+    <ClCompile Include="common\base\CMemPool.cpp" />
+    <ClCompile Include="common\base\CMessageQueue.cpp" />
+    <ClCompile Include="common\base\CMultiW_SingleR_Queue.cpp" />
+    <ClCompile Include="common\base\CMutex.cpp" />
+    <ClCompile Include="common\base\CProcess.cpp" />
+    <ClCompile Include="common\base\CRefObj.cpp" />
+    <ClCompile Include="common\base\CShm.cpp" />
+    <ClCompile Include="common\base\CSingleW_SingleR_Buffer.cpp" />
+    <ClCompile Include="common\base\CThread.cpp" />
+    <ClCompile Include="common\base\CTimer.cpp" />
+    <ClCompile Include="common\base\CUUId.cpp" />
+    <ClCompile Include="common\base\Function.cpp" />
+    <ClCompile Include="common\base\xmlConfig.cpp" />
     <ClCompile Include="common\base_lib\CCfg.cpp" />
     <ClCompile Include="common\base_lib\CCond.cpp" />
     <ClCompile Include="common\base_lib\CLock.cpp" />
@@ -121,6 +140,14 @@
     <ClCompile Include="common\base_lib\CUUId.cpp" />
     <ClCompile Include="common\base_lib\Function.cpp" />
     <ClCompile Include="common\base_lib\xmlConfig.cpp" />
+    <ClCompile Include="common\connect\CClient.cpp" />
+    <ClCompile Include="common\connect\CConnectManager.cpp" />
+    <ClCompile Include="common\connect\CDataHandler.cpp" />
+    <ClCompile Include="common\connect\CDataTransmit.cpp" />
+    <ClCompile Include="common\connect\CEpoll.cpp" />
+    <ClCompile Include="common\connect\CSocket.cpp" />
+    <ClCompile Include="common\connect\CTcpConnect.cpp" />
+    <ClCompile Include="common\connect\CUdp.cpp" />
     <ClCompile Include="common\connect_lib\CClient.cpp" />
     <ClCompile Include="common\connect_lib\CConnectManager.cpp" />
     <ClCompile Include="common\connect_lib\CDataHandler.cpp" />
@@ -129,6 +156,9 @@
     <ClCompile Include="common\connect_lib\CSocket.cpp" />
     <ClCompile Include="common\connect_lib\CTcpConnect.cpp" />
     <ClCompile Include="common\connect_lib\CUdp.cpp" />
+    <ClCompile Include="common\db\CMemcache.cpp" />
+    <ClCompile Include="common\db\CMySql.cpp" />
+    <ClCompile Include="common\db\CRedis.cpp" />
     <ClCompile Include="common\db_lib\CMemcache.cpp" />
     <ClCompile Include="common\db_lib\CMySql.cpp" />
     <ClCompile Include="common\db_lib\CRedis.cpp" />
@@ -192,6 +222,29 @@
     <ClInclude Include="cattles_game\CGameLogicHandler.h" />
     <ClInclude Include="cattles_game\CGameProcess.h" />
     <ClInclude Include="cattles_game\_NCattlesConfigData_.h" />
+    <ClInclude Include="common\base\CCfg.h" />
+    <ClInclude Include="common\base\CCond.h" />
+    <ClInclude Include="common\base\CLock.h" />
+    <ClInclude Include="common\base\CLogger.h" />
+    <ClInclude Include="common\base\CMD5.h" />
+    <ClInclude Include="common\base\CMemManager.h" />
+    <ClInclude Include="common\base\CMemPool.h" />
+    <ClInclude Include="common\base\CMessageQueue.h" />
+    <ClInclude Include="common\base\CMultiW_SingleR_Queue.h" />
+    <ClInclude Include="common\base\CMutex.h" />
+    <ClInclude Include="common\base\Constant.h" />
+    <ClInclude Include="common\base\CProcess.h" />
+    <ClInclude Include="common\base\CRefObj.h" />
+    <ClInclude Include="common\base\CShm.h" />
+    <ClInclude Include="common\base\CSingleW_SingleR_Buffer.h" />
+    <ClInclude Include="common\base\CThread.h" />
+    <ClInclude Include="common\base\CTimer.h" />
+    <ClInclude Include="common\base\CUUId.h" />
+    <ClInclude Include="common\base\ErrorCode.h" />
+    <ClInclude Include="common\base\Function.h" />
+    <ClInclude Include="common\base\MacroDefine.h" />
+    <ClInclude Include="common\base\Type.h" />
+    <ClInclude Include="common\base\xmlConfig.h" />
     <ClInclude Include="common\base_lib\CCfg.h" />
     <ClInclude Include="common\base_lib\CCond.h" />
     <ClInclude Include="common\base_lib\CLock.h" />
@@ -215,6 +268,16 @@
     <ClInclude Include="common\base_lib\MacroDefine.h" />
     <ClInclude Include="common\base_lib\Type.h" />
     <ClInclude Include="common\base_lib\xmlConfig.h" />
+    <ClInclude Include="common\connect\CClient.h" />
+    <ClInclude Include="common\connect\CConnectManager.h" />
+    <ClInclude Include="common\connect\CDataHandler.h" />
+    <ClInclude Include="common\connect\CDataTransmit.h" />
+    <ClInclude Include="common\connect\CEpoll.h" />
+    <ClInclude Include="common\connect\CSocket.h" />
+    <ClInclude Include="common\connect\CTcpConnect.h" />
+    <ClInclude Include="common\connect\CUdp.h" />
+    <ClInclude Include="common\connect\ILogicHandler.h" />
+    <ClInclude Include="common\connect\NetType.h" />
     <ClInclude Include="common\connect_lib\CClient.h" />
     <ClInclude Include="common\connect_lib\CConnectManager.h" />
     <ClInclude Include="common\connect_lib\CDataHandler.h" />
@@ -225,6 +288,9 @@
     <ClInclude Include="common\connect_lib\CUdp.h" />
     <ClInclude Include="common\connect_lib\ILogicHandler.h" />
     <ClInclude Include="common\connect_lib\NetType.h" />
+    <ClInclude Include="common\db\CMemcache.h" />
+    <ClInclude Include="common\db\CMySql.h" />
+    <ClInclude Include="common\db\CRedis.h" />
     <ClInclude Include="common\db_lib\CMemcache.h" />
     <ClInclude Include="common\db_lib\CMySql.h" />
     <ClInclude Include="common\db_lib\CRedis.h" />
@@ -335,6 +401,14 @@
     <ClInclude Include="xqfanfan_game_service\CXiangQiSrv.h" />
     <ClInclude Include="xqfanfan_game_service\TypeDefine.h" />
     <ClInclude Include="xqfanfan_game_service\_XiangQiConfig_.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="common\base\Makefile" />
+    <None Include="common\base\readme" />
+    <None Include="common\connect\Makefile" />
+    <None Include="common\connect\readme" />
+    <None Include="common\db\Makefile" />
+    <None Include="common\db\readme" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
