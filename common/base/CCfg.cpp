@@ -273,6 +273,7 @@ ConfigData* CCfg::getSectionData(const char* section)
 	return NULL;
 }
 
+// 头插法
 ConfigData* CCfg::getCurCfgData(const char* data, bool& isSection)
 {
 	isSection = false;

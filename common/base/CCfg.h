@@ -110,7 +110,7 @@ private:
 	CCfg& operator =(const CCfg&);
 	
 private:
-	ConfigData* m_cfgData;
+	ConfigData* m_cfgData;			// 最后一个配置项（整个section）（链表第一个元素）
 	ConfigData* m_curCfgData;
 	char m_fileName[MaxFullLen];
 };
